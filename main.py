@@ -1,3 +1,7 @@
+"""
+This module runs a simple Flask application.
+"""
+
 import os
 from flask import Flask
 
