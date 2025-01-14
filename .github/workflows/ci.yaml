@@ -11,5 +11,9 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
 
-      - name: ls
-        run: ls *
+      - name: install pytest
+        run: |
+          pip install pytest
+
+      - name: check
+        run: pytest
