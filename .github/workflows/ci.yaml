@@ -11,9 +11,9 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
 
-      - name: install pytest
+      - name: install pylint
         run: |
-          pip install pytest
+          pip install pylint
 
       - name: check
-        run: pytest
+        run: pylint
