@@ -27,9 +27,17 @@ jobs:
 
       - name: lunch test unitaire
         run: |
-          # pytest
+         # pytest
 
 
       - name: build
         run: docker build -t app1:v1 .
 
+      - name : connect to dockerhub
+        run: 
+          # commande pour se connecter sur dockerhub
+
+      - name: push
+        run: |
+          docker tag m2i:latest mkhatiri/my_project:latest
+          docker push mkhatiri/m2i:latest
