@@ -19,4 +19,4 @@ jobs:
       - name: deploy image
         run: |
           echo "deployer sur l'evironment (${{ github.ref_name }})"
-
+          echo "."
