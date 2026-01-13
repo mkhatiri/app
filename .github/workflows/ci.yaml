@@ -38,5 +38,5 @@ jobs:
 
       - name: push
         run: |
-          docker tag app1:v1 mkhatiri/mi2026:latest
-          docker push mkhatiri/mi2026:latest
+          docker tag app1:v1 mkhatiri/mi2026:${{ github.run_id }}
+          docker push mkhatiri/mi2026:${{ github.run_id }}
