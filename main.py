@@ -12,7 +12,7 @@ def hello_world():
     """
     A simple route that returns a greeting.
     """
-    return '<center><h1>Hello, m2i!  (2025)</h1></center>'
+    return '<center><h1>Hello, mi!  (2026)</h1></center>'
 
 if __name__ == "__main__":
     #    Main entry point of the application.
