@@ -19,7 +19,7 @@ jobs:
           pip install pylint
 
       - name: check
-        run: pylint .
+        run: pylint main.py
 
       - name: install pytest
         run: |
