@@ -1,8 +1,8 @@
 name: CD
 
 on:
-  release:
-  workflow_dispatch:
+  push:
+    branches: [dev, test, main]
 
 jobs:  
   deploiment:
@@ -17,4 +17,6 @@ jobs:
         run: docker pull hello-world
 
       - name: deploy image
-        run: docker run hello-world
+        run: |
+          echo "deployer sur l'evironment (${{ github.ref_name }})"
+          echo "."
