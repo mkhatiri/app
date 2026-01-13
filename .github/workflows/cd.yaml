@@ -18,5 +18,5 @@ jobs:
 
       - name: deploy image
         run: |
-          echo "deployer sur l'evironment (${{ github.base_ref }})"
+          echo "deployer sur l'evironment (${{ github.ref_name }})"
 
